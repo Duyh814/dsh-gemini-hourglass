@@ -1,5 +1,7 @@
 # Gemini 沙漏 (`dsh-gemini-hourglass`)
 
+**简体中文** | [English](./README.en.md)
+
 > 包名：`dsh-ntr-quota` · 让 NTR 中的五小时与每周配额如沙漏般清晰可见
 
 **DeepSeek Harness（DSH）插件**：自动同步并实时展示 **NTR（`dsh-ntr`）** 中 ACP Agent 的 **五小时用量（5-Hour Limit）** 与 **每周用量（Weekly Limit）** 及精确重置倒计时。

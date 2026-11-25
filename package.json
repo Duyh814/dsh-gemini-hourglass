@@ -18,7 +18,9 @@
     "cordis.patch.yml",
     "src",
     "scripts",
-    "README.md"
+    "README.md",
+    "README.en.md",
+    "LICENSE"
   ],
   "keywords": [
     "dsh",
