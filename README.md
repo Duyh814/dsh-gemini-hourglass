@@ -4,6 +4,18 @@
 
 **DeepSeek Harness（DSH）插件**：自动同步并实时展示 **NTR（`dsh-ntr`）** 中 ACP Agent 的 **五小时用量（5-Hour Limit）** 与 **每周用量（Weekly Limit）** 及精确重置倒计时。
 
+## 界面预览
+
+### 1. 输入框底栏实时胶囊
+紧邻 NTR 上下文占比环显示当前模型所属配额组的五小时与每周剩余百分比，颜色随余量自动预警，对话轮次结束自动刷新：
+
+![输入框底栏实时配额胶囊](./docs/assets/composer-dock-pill.webp)
+
+### 2. 多分组详情浮层与精确重置倒计时
+点击底栏胶囊即可展开所有模型分组（Gemini Models、Claude and GPT models 等）的双进度条、精确重置时间与剩余/已用口径切换：
+
+![NTR 五小时与每周用量详情浮层](./docs/assets/quota-popover.webp)
+
 ## 核心能力
 
 - **零 Token 真实同步**：

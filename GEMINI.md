@@ -3,6 +3,7 @@
 Node.js >= 22 (ESM) + Cordis (`@deepseek-ai/cordis`) + React 19 (DSH Shell ModuleLoader) + Zero Runtime Dependencies
 
 <directory>
+docs/ - README 界面预览截图与文档静态资源 (1 subdirectory: assets/)
 src/ - Host 端核心逻辑（NTR 注册表读取、持久化存储、单飞同步调度、HTTP/SSE 路由、格式化工具）(1 subdirectory: providers/)
 src/providers/ - 多 Agent 用量采集适配器（agy Antigravity CLI、codex 本地会话速率限制）
 scripts/ - 本地桌面端 Profile 一键安装与卸载脚本
