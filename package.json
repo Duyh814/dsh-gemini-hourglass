@@ -1,0 +1,54 @@
+{
+  "name": "dsh-ntr-quota",
+  "version": "0.1.0",
+  "description": "Gemini 沙漏（dsh-gemini-hourglass）— DeepSeek Harness 插件：自动同步并展示 NTR（dsh-ntr）下 ACP Agent（Antigravity / Codex）的五小时用量与每周用量及重置倒计时。",
+  "repository": "https://github.com/Duyh814/dsh-gemini-hourglass.git",
+  "author": "Duyh814",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "src",
+    "scripts",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-ntr",
+    "quota",
+    "usage",
+    "antigravity"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "install:desktop": "node scripts/install-desktop.mjs install",
+    "uninstall:desktop": "node scripts/install-desktop.mjs uninstall"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+# dsh-ntr-quota bundle patch.
+#
+# 一行裸包名 insert 即可同时挂载 Host 端（index.js）与 Browser 端（client.js，由 package.json dsh.client 声明）。
+- insert:
+    - id: dsh-ntr-quota
+      name: 'dsh-ntr-quota'
+      config: {}
